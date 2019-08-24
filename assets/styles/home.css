@@ -13,7 +13,10 @@ body {
 .product-section {
   padding: 30px 15px;
 }
-
+footer .bottom {
+  background: #c1c1c1;
+  font-size: 18px;
+}
 .welcome {
   font-size: 32px;
 }
@@ -146,7 +149,7 @@ a.nav-link.active {
 
 .product-dots {
   position: absolute;
-  bottom: -60px;
+  bottom: -10px;
 
   display: block;
 
@@ -176,9 +179,8 @@ a.nav-link.active {
 
   display: block;
 
-  width: 300px;
+  width: 30px;
   height: 4px;
-  /* padding: 5px; */
 
   cursor: pointer;
 
@@ -198,8 +200,18 @@ a.nav-link.active {
 }
 .product-dots li.slick-active button {
   background: #0074ff;
-  width: 300px;
 }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .product-dots li button {
+    width: 300px;
+  }
+  .product-dots {
+    bottom: -60px;
+  }
+}
+
 /* .product-dots li button:before {
   font-family: "product";
   font-size: 6px;

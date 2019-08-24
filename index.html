@@ -257,48 +257,46 @@
           <div class="col-12 col-md-6 col-lg-4 text-center">
             <img src="./assets/images/logo-footer.png" alt="">
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <h3 class="text-uppercase text-light">APA INDUSTRIES CO., LTD.</h3>
-            <h6>
+          <div class="col-12 col-md-6 col-lg-4 pt-5">
+            <h3 class="text-uppercase text-light pb-3">APA INDUSTRIES CO., LTD.</h3>
+            <h6 class="text-light font-weight-normal">
               49 Moo 8, Tambol Thakai, Amphur Muangchachoengsao, Chachoengsao 24000, Thailand
             </h6>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 text-light">
-            <div class="d-table">
-              <div class="tr">
-                <div class="td">Tel</div>
-                <div class="td" style="width: 10px;">:</div>
-                <div class="td">
+          <div class="col-12 col-md-12 col-lg-4 text-light pt-5 pt-lg-0">
+            <table class="w-100">
+              <tr>
+                <td class="h4 medium align-top">
+                  Tel
+                </td>
+                <td class="font-weight-normal h4 align-top px-2 text-center" width="">:</td>
+                <td class="h4 font-weight-normal">
                   038-559-241,<br /> 089-816-2159,<br /> 089-816-2166
-                </div>
-              </div>
-              <div class="tr">
-                <div class="td w-50">Sales Dept. <span class="text-right">:</span></div>
-                <div class="td">
-                  081-486-6833
-                </div>
-              </div>
-              <div class="tr">
-                <div class="td">
-                  Fax
-                </div>
-                <div class="td">
-                  038-559-263,<br /> 081-376-0873<br />
-                </div>
-              </div>
-              <div class="tr">
-                <div class="td">
-                  Email
-                </div>
-                <div class="td">
+                </td>
+              </tr>
+              <tr>
+                <td class="h4 medium align-top">Sales Dept. </td>
+                <td class="font-weight-normal h4 align-top px-2 text-center">:</td>
+                <td class="h4 font-weight-normal">081-486-6833</td>
+              </tr>
+              <tr>
+                <td class="h4 medium align-top">Fax</td>
+                <td class="font-weight-normal h4 align-top px-2 text-center">:</td>
+                <td class="h4 font-weight-normal">038-559-263,<br /> 081-376-0873<br /></td>
+              </tr>
+              <tr>
+                <td class="h4 medium align-top">Email</td>
+                <td class="font-weight-normal h4 align-top px-2 text-center">:</td>
+                <td class="h4 font-weight-normal">
                   info@apa-industries.com,<br /> sales@apa-industries.com
-                </div>
-              </div>
-            </div>
+
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
-      <div class="bg-infohome py-2 text-center">
+      <div class="py-2 text-center bottom">
         <h6 class="mb-0 text-light">© Copyright 2013 Reserved www. apa-industries.com All Rights Reserved</h6>
       </div>
     </Footer>
@@ -328,6 +326,24 @@
       centerMode: true,
       infinite: true,
       arrows: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+      ]
     });
   </script>
 </body>

@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="./assets/js/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/styles/util.css" />
+
   <link rel="stylesheet" type="text/css" href="./assets/styles/home.css" />
   <link rel="stylesheet" type="text/css" href="./assets/styles/font.css" />
 
@@ -18,23 +20,21 @@
 </head>
 
 <body>
-  <div class="bg-infohome text-light px-5">
+  <div class="top-menu text-light px-sm-1 px-0 px-lg-5">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-md-6 text-uppercase">
+      <div class="row no-gutters">
+        <div class="col-12 col-md-6 py-md-1 text-uppercase semi-bold mb-0 ">
           APA Industries Co., Ltd.
         </div>
-        <div class="col-12 col-md-6 text-uppercase text-light text-right">
-          TEL.:038-559-241,
-          089-816-2159,
-          089-816-2166
+        <div class="col-12 col-md-6 py-md-1 text-uppercase semi-bold mb-0 text-light text-md-right">
+          TEL.: 089-816-2856, 038-559-241
         </div>
       </div>
     </div>
   </div>
-  <div class="page-home px-5 pb-5">
+  <div class="page-home px-0 px-sm-1 px-lg-5">
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="menubar navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand py-3" href="#">
           <img class="img-fluid" height="80px" src="./assets/images/logo.png" alt="">
         </a>
@@ -72,23 +72,23 @@
         </div>
       </nav>
 
-      <!--brand icon-->
 
+      <!-- hero -->
       <div class="row">
         <div class="col-12">
-          <img src="" alt="">
           <div class="img-hero">
             <div class="hero-text text-center">
-              <div class="font-weight-normal primary-color welcome" style="font-size: 67px;">WELCOME TO</div>
+              <div class="font-weight-normal primary-color welcome">WELCOME TO</div>
               <h1 class="ex-bold letter-5 primary-color apa mb-0">APA INDUSTRIES</h1>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- about -->
       <div class="row">
         <div class="col-12 text-center ">
-          <div class="bg-infohome p-5">
+          <div class="about-section bg-infohome">
             <img class="mr-auto" src="./assets/images/topic.png" alt="">
             <h2 class="text-center topic primary-color bold">ABOUT APA</h2>
             <p class="mb-0 pt-4">
@@ -112,15 +112,15 @@
 
 
       <div class="row no-gutters">
-        <div class="col-md-6">
+        <div class="col-12 col-md-6">
           <div class="img-breaking-force"></div>
         </div>
-        <div class="col-md-6">
-          <div class="row no-gutters primary-bg text-light">
-            <div class="col-lg-6">
+        <div class="col-12 col-md-6 primary-bg">
+          <div class="row no-gutters text-light">
+            <div class="col-xl-6">
               <div class="img-pinhole"></div>
-              <div class="py-3 px-3">
-                <table>
+              <div class="pt-3 py-xl-3 px-3">
+                <table class="w-100">
                   <tr>
                     <td width="30px;"></td>
                     <td>
@@ -140,21 +140,22 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td class="py-4" style="vertical-align: top;">
-                      <div class="" style="width: 0;
+                    <td class="py-5 py-xl-4" style="vertical-align: top;">
+                      <div style="width: 0;
                                     height: 0;
                                     border-style: solid;
                                     border-width: 10px 17.3px 10px 0;
                                     border-color: transparent #ffffff transparent transparent;
                                     "></div>
                     </td>
-                    <td class="py-4">
+                    <td class="py-5 py-xl-4">
                       <div class="h5 font-weight-normal text-uppercase">
                         <div class="">breaking force test for<br>ampoule</div>
-
                       </div>
                     </td>
-                    <td></td>
+                    <td>
+
+                    </td>
                   </tr>
                   <tr>
                     <td></td>
@@ -162,9 +163,15 @@
                       wail thickness measurement<br>
                       for plastic and glass<br>
                       products
+                      <div class="d-block d-xl-none mx-auto pt-3" style="width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 17.3px 10px 0 10px;
+                  border-color: #ffffff transparent transparent transparent;
+                  ">
                     </td>
                     <td width="20px">
-                      <div style="width: 0;
+                      <div class="d-none d-xl-block" style="width: 0;
                         height: 0;
                         border-style: solid;
                         border-width: 10px 0 10px 17.3px;
@@ -175,20 +182,21 @@
                 </table>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="d-none d-xl-block bg-sm-danger col-xl-6">
               <div class="img-wail"></div>
             </div>
           </div>
         </div>
+        <div class="d-xl-none col-12">
+          <div class="img-wail"></div>
+        </div>
       </div>
       <div class="primary-bg py-3"></div>
-
-
     </div>
   </div>
 
 
-  <div class="page-home pt-5">
+  <div class="product-section">
     <div class="text-center">
       <img class="mr-auto" src="./assets/images/topic.png" alt="">
     </div>
@@ -203,42 +211,45 @@
       <div class="product-item">
         <img class="img-fluid" src="./assets/images/product1.jpg" alt="">
         <div>
-          <h3>test1</h3>
-          <h5>
+          <h4 class="medium pt-3 text-uppercase">aulmnium collapsible tube</h4>
+          <h5 class="font-weight-normal">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, animi neque magni deserunt at laborum ab
-            eos repellendus fugiat ratione iure cupiditate sit ducimus, sunt molestias suscipit eveniet in minima.
           </h5>
         </div>
       </div>
 
       <div class="product-item">
         <img class="img-fluid" src="./assets/images/product2.jpg" alt="">
-        <h3>test</h3>
-        <h5>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, animi neque magni deserunt at laborum ab
-          eos repellendus fugiat ratione iure cupiditate sit ducimus, sunt molestias suscipit eveniet in minima.
-        </h5>
+        <div>
+          <h4 class="medium pt-3 text-uppercase">aulmnium collapsible tube</h4>
+          <h5 class="font-weight-normal">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, animi neque magni deserunt at laborum ab
+          </h5>
+        </div>
       </div>
 
       <div class="product-item">
         <img class="img-fluid" src="./assets/images/product3.jpg" alt="">
-        <h3>test</h3>
-        <h5>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, animi neque magni deserunt at laborum ab
-          eos repellendus fugiat ratione iure cupiditate sit ducimus, sunt molestias suscipit eveniet in minima.
-        </h5>
+        <div>
+          <h4 class="medium pt-3 text-uppercase">aulmnium collapsible tube</h4>
+          <h5 class="font-weight-normal">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, animi neque magni deserunt at laborum ab
+          </h5>
+        </div>
       </div>
 
       <div class="product-item">
         <img class="img-fluid" src="./assets/images/product4.jpg" alt="">
-        <h3>test4</h3>
-        <h5>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, animi neque magni deserunt at laborum ab
-          eos repellendus fugiat ratione iure cupiditate sit ducimus, sunt molestias suscipit eveniet in minima.
-        </h5>
+        <div>
+          <h4 class="medium pt-3 text-uppercase">aulmnium collapsible tube</h4>
+          <h5 class="font-weight-normal">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, animi neque magni deserunt at laborum ab
+          </h5>
+        </div>
       </div>
     </div>
   </div>
+
   <div class="px-5 pb-5">
     <Footer>
       <div class="container-fluid bg-primary py-5">

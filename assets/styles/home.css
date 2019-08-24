@@ -2,6 +2,21 @@
 body {
   font-family: "barlow_semi_condensed", Arial, Helvetica, sans-serif !important;
 }
+.top-menu {
+  background-color: #c1c1c1;
+  font-size: 14px;
+}
+.menubar {
+  background-color: #ffffff;
+}
+.about-section,
+.product-section {
+  padding: 30px 15px;
+}
+
+.welcome {
+  font-size: 32px;
+}
 
 a.nav-link {
   font-weight: 500;
@@ -12,18 +27,7 @@ a.nav-link.active {
   font-size: 25px; */
   color: #0074ff !important;
 }
-.letter-5 {
-  letter-spacing: 5px;
-}
-.info-text {
-  color: #515151;
-}
-.primary-color {
-  color: #0074ff;
-}
-.primary-bg {
-  background-color: #0074ff;
-}
+
 .hero-text {
   padding-top: 90px;
 }
@@ -32,51 +36,6 @@ a.nav-link.active {
 }
 .hero-text .welcome {
   line-height: 67px;
-}
-.bold {
-  font-weight: bold;
-}
-.ex-bold {
-  font-weight: 900;
-}
-.semi-bold {
-  font-weight: 800;
-}
-.medium {
-  font-weight: 500;
-}
-
-.h1,
-h1 {
-  font-size: 90px !important;
-}
-.h2,
-h2 {
-  font-size: 34px !important;
-}
-
-.h3,
-h3 {
-  font-size: 28px !important;
-}
-.h4,
-h4 {
-  font-size: 24px !important;
-}
-.h5,
-h5 {
-  font-size: 22px !important;
-}
-.h6,
-h6 {
-  font-size: 20px !important;
-}
-p {
-  font-size: 28px !important;
-  color: #494949 !important;
-}
-.bg-infohome {
-  background-color: #efefef;
 }
 
 .btn-lang {
@@ -95,7 +54,7 @@ p {
   background-image: url("../images/hero.jpg");
   background-position: center top;
   background-size: cover;
-  height: 900px;
+  height: 600px;
 }
 
 .img-breaking-force {
@@ -114,24 +73,71 @@ p {
 
 .img-wail {
   background-image: url("../images/highlight3.jpg");
-  background-position: center top;
+  background-position: center;
   background-size: cover;
-  height: 667px;
+  height: 300px;
 }
 
-.primary-bg {
-  background-color: #0074ff;
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .img-hero {
+    height: 900px;
+  }
 }
 
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .h1,
+  h1 {
+    font-size: 50px !important;
+  }
+  .welcome {
+    font-size: 44px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .about-section {
+    padding: 84px 60px 112px;
+  }
+  .product-section {
+    padding-top: 93px;
+    padding-bottom: 150px;
+  }
+  .h1,
+  h1 {
+    font-size: 90px !important;
+  }
+  .h2,
+  h2 {
+    font-size: 34px !important;
+  }
+  .welcome {
+    font-size: 67px;
+  }
+  .img-wail {
+    height: 667px;
+    background-position: center top;
+  }
+  .top-menu {
+    font-size: 24px;
+  }
+}
+
+/* product */
+.product-item h5 {
+  color: #707070;
+}
 .product-item {
   padding: 7px;
-}
-
-.tr {
-  display: table-row;
-}
-.td {
-  display: table-cell;
 }
 /* Dots */
 .product-dotted.product-slider {
@@ -140,7 +146,7 @@ p {
 
 .product-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: -60px;
 
   display: block;
 
@@ -157,9 +163,9 @@ p {
 
   display: inline-block;
 
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
+  /* width: 20px;
+  height: 20px; */
+  /* margin: 0 5px; */
   padding: 0;
 
   cursor: pointer;
@@ -170,16 +176,17 @@ p {
 
   display: block;
 
-  width: 20px;
-  height: 20px;
-  padding: 5px;
+  width: 300px;
+  height: 4px;
+  /* padding: 5px; */
 
   cursor: pointer;
 
   color: transparent;
   border: 0;
   outline: none;
-  background: transparent;
+  background: #eaeaea;
+  /* background: transparent; */
 }
 .product-dots li button:hover,
 .product-dots li button:focus {
@@ -189,7 +196,11 @@ p {
 .product-dots li button:focus:before {
   opacity: 1;
 }
-.product-dots li button:before {
+.product-dots li.slick-active button {
+  background: #0074ff;
+  width: 300px;
+}
+/* .product-dots li button:before {
   font-family: "product";
   font-size: 6px;
   line-height: 20px;
@@ -209,8 +220,8 @@ p {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.product-dots li.slick-active button:before {
+} */
+/* .product-dots li.slick-active button:before {
   opacity: 0.75;
   color: black;
-}
+} */

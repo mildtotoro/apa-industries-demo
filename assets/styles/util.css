@@ -1,0 +1,93 @@
+.primary-bg {
+  background-color: #0074ff;
+}
+.letter-5 {
+  letter-spacing: 5px;
+}
+
+.tr {
+  display: table-row;
+}
+.td {
+  display: table-cell;
+}
+.info-text {
+  color: #515151;
+}
+.primary-color {
+  color: #0074ff;
+}
+
+.bold {
+  font-weight: bold;
+}
+.ex-bold {
+  font-weight: 900;
+}
+.semi-bold {
+  font-weight: 800;
+}
+.medium {
+  font-weight: 500;
+}
+.h1,
+h1 {
+  font-size: 32px !important;
+}
+.h2,
+h2 {
+  font-size: 30px !important;
+}
+.h3,
+h3 {
+  font-size: 28px !important;
+}
+.h4,
+h4 {
+  font-size: 24px !important;
+}
+.h5,
+h5 {
+  font-size: 22px !important;
+}
+.h6,
+h6 {
+  font-size: 20px !important;
+}
+p {
+  font-size: 28px !important;
+  color: #494949 !important;
+}
+.bg-infohome {
+  background-color: #efefef;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .about-section {
+    padding: 84px 60px 112px;
+  }
+  .h1,
+  h1 {
+    font-size: 90px !important;
+  }
+  .h2,
+  h2 {
+    font-size: 34px !important;
+  }
+  .welcome {
+    font-size: 67px;
+  }
+}

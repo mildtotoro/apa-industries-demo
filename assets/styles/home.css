@@ -210,6 +210,9 @@ a.nav-link.active {
   .product-dots {
     bottom: -60px;
   }
+  .container {
+    max-width: 1320px !important;
+  }
 }
 
 /* .product-dots li button:before {
